@@ -81,9 +81,9 @@
                 important for your journey and should always feel confident that
                 you are travelling sustainably.”
               </p>
-              <button class="btn bg-green-600 text-xl font-bold border-0">
+              <a href="#ticket-details"><button class="btn bg-green-600 text-xl font-bold border-0">
                 Buy Tickets
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
@@ -225,7 +225,7 @@
           </div>
         </div>
       </section>
-      <section class="container mx-auto my-12 w-[90%]">
+      <section id="ticket-details" class="container mx-auto my-12 w-[90%]">
         <div class="flex justify-between">
           <div class="w-[50%]">
             <h2 class="text-2xl font-semibold">Select Your Seat</h2>
@@ -369,25 +369,26 @@
             </div>
 
             <!-- field  -->
-            <div>
+            <div class="space-y-5 mt-8">
+              <legend class="font-bold">Passenger Name*</legend>
               <label class="input input-bordered flex items-center gap-2">
-                Name
-                <input type="text" class="grow" placeholder="Daisy" />
+                
+                <input type="text" class="grow" placeholder="Enter your name" />
               </label>
+              <legend class="font-bold">Phone Number*</legend>
               <label class="input input-bordered flex items-center gap-2">
-                Email
-                <input type="text" class="grow" placeholder="daisy@site.com" />
+              
+                <input type="number" class="grow" placeholder="Enter your number" />
               </label>
+
+              <legend class="font-bold">Email Id*</legend>
               <label class="input input-bordered flex items-center gap-2">
-                <input type="text" class="grow" placeholder="Search" />
-                <kbd class="kbd kbd-sm">⌘</kbd>
-                <kbd class="kbd kbd-sm">K</kbd>
+              
+                <input type="text" class="grow" placeholder="Enter your Email" />
               </label>
-              <label class="input input-bordered flex items-center gap-2">
-                <input type="text" class="grow" placeholder="Search" />
-                <span class="badge badge-info">Optional</span>
-              </label>
+             
             </div>
+            <button class="btn w-full bg-green-500 text-white font-bold my-5">Next</button>
           </div>
         </div>
       </section>
@@ -396,7 +397,7 @@
     <!-- ticket section start  -->
 
     <!-- footer section  -->
-    <footer class="footer p-10 bg-neutral text-neutral-content">
+    <footer class="container mx-auto footer p-10 bg-neutral text-neutral-content">
       <aside>
         <svg
           width="50"
