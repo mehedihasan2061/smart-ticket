@@ -64,7 +64,7 @@
       </nav>
       <!-- navbar End  -->
       <!-- banner section start  -->
-      <section class="container w-[90%] mx-auto my-10">
+      <section class="container w-[90%] mx-auto my-10 rounded-3xl">
         <div
           class="hero min-h-screen"
           style="background-image: url(./images/banner.png)"
@@ -81,9 +81,11 @@
                 important for your journey and should always feel confident that
                 you are travelling sustainably.”
               </p>
-              <a href="#ticket-details"><button class="btn bg-green-600 text-xl font-bold border-0">
-                Buy Tickets
-              </button></a>
+              <a href="#ticket-details"
+                ><button class="btn bg-green-600 text-xl font-bold border-0">
+                  Buy Tickets
+                </button></a
+              >
             </div>
           </div>
         </div>
@@ -156,7 +158,16 @@
 
       <!-- paribahan details  -->
 
-      <section class="container mx-auto my-16">
+      <section class= "container mx-auto rounded-t-2xl bg-gray-100 p-16">
+        <section class="container mx-auto my-24 bg-gray-100">
+        <div>
+          <h1 class="text-4xl font-bold text-center mb-5">SA. Paribahan</h1>
+          <p class="w-[50%] mx-auto mb-16">
+            “You should feel welcome, safe, receive information that is
+            important for your journey and should always feel confident that you
+            are travelling sustainably.
+          </p>
+        </div>
         <div>
           <div class="card w-[90%] mx-auto bg-base-100 shadow-xl flex">
             <div class="px-10">
@@ -177,7 +188,7 @@
                     >
                       <img class="h-7" src="./images/seat-green.png" alt="" />
                       <p class="text-green-600 text-xl font-semibold">
-                        <span>40</span> Seat Left
+                        <span id="available-sheat">40</span> Seat Left
                       </p>
                     </div>
                   </div>
@@ -195,15 +206,15 @@
                         9.00 pm
                       </p>
                     </div>
-                    <div class="flex justify-between mt-3">
-                      <div class="bg-gray-200 p-3 rounded-xl">
-                        <p class="text-xl">Boarding Point - Trisal</p>
+                    <div class="flex justify-between mt-3 ">
+                      <div class="bg-gray-200 p-2 rounded-xl mx-2">
+                        <p class="text-xl ">Boarding Point - Trisal</p>
                       </div>
-                      <div class="bg-gray-200 p-3 rounded-xl">
+                      <div class="bg-gray-200 p-2 rounded-xl  mx-2">
                         <p class="text-xl">Dropping Point - Gazipur</p>
                       </div>
-                      <div class="bg-gray-200 p-3 rounded-xl">
-                        <p class="text-xl">Est. Time - 11 Hour</p>
+                      <div class="bg-gray-200 p-2 rounded-xl mx-2">
+                        <p class="text-xl mx-2">Est. Time - 11 Hour</p>
                       </div>
                     </div>
                   </div>
@@ -214,7 +225,7 @@
                 <div class="flex items-center">
                   <div>
                     <img src="./images/fare.png" alt="" />
-                    <h1 class="text-3xl font-bold">500 Tk</h1>
+                    <h1 class="text-3xl font-bold"><span id="fare">550</span> Tk</h1>
                     <h3 class="text-xl font-semibold text-gray-400">
                       Per Seat
                     </h3>
@@ -225,7 +236,8 @@
           </div>
         </div>
       </section>
-      <section id="ticket-details" class="container mx-auto my-12 w-[90%]">
+      <section id="ticket-details" class="container mx-auto my-12 w-[90%] bg-white p-16 rounded-2xl">
+        
         <div class="flex justify-between">
           <div class="w-[50%]">
             <h2 class="text-2xl font-semibold">Select Your Seat</h2>
@@ -249,107 +261,116 @@
                 >
                   A
                 </div>
-                <div class="bg-gray-100 p-4 text-center rounded-xl">A1</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">A2</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">A3</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">A4</div>
+                <div class="selectSheat bg-gray-100 p-4 text-center rounded-xl">A1</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">A2</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">A3</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">A4</div>
                 <div
                   class="text-center flex items-center justify-center text-xl font-bold rounded-xl"
                 >
                   B
                 </div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">B1</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">B2</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">B3</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">B4</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">B1</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">B2</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">B3</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">B4</div>
                 <div
                   class="text-center flex items-center justify-center text-xl font-bold rounded-xl"
                 >
                   C
                 </div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">C1</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">C2</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">C3</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">C4</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">C1</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">C2</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">C3</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">C4</div>
                 <div
                   class="text-center flex items-center justify-center text-xl font-bold rounded-xl"
                 >
                   D
                 </div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">D1</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">D2</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">D3</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">D4</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">D1</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">D2</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">D3</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">D4</div>
                 <div
                   class="text-center flex items-center justify-center text-xl font-bold rounded-xl"
                 >
                   E
                 </div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">E1</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">E2</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">E3</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">E4</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">E1</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">E2</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">E3</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">E4</div>
                 <div
                   class="text-center flex items-center justify-center text-xl font-bold rounded-xl"
                 >
                   F
                 </div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">F1</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">F2</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">F3</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">F4</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">F1</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">F2</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">F3</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">F4</div>
                 <div
                   class="text-center flex items-center justify-center text-xl font-bold rounded-xl"
                 >
                   G
                 </div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">G1</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">G2</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">G3</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">G4</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">G1</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">G2</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">G3</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">G4</div>
                 <div
                   class="text-center flex items-center justify-center text-xl font-bold rounded-xl"
                 >
                   H
                 </div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">H1</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">H2</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">H3</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">H4</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">H1</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">H2</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">H3</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">H4</div>
                 <div
                   class="text-center flex items-center justify-center text-xl font-bold rounded-xl"
                 >
                   I
                 </div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">I1</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">I2</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">I3</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">I4</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">I1</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">I2</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">I3</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">I4</div>
                 <div
                   class="text-center flex items-center justify-center text-xl font-bold rounded-xl"
                 >
                   J
                 </div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">J1</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">J2</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">J3</div>
-                <div class="bg-gray-100 p-3 text-center rounded-xl">J4</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">J1</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">J2</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">J3</div>
+                <div class="selectSheat bg-gray-100 p-3 text-center rounded-xl">J4</div>
               </div>
             </div>
           </div>
-          <div class="w-[40%]">
+          <div>
+            <img src="./images/line.svg" alt="">
+          </div>
+          <div class="w-[40%] ">
             <h2 class="text-2xl font-semibold mb-6">Select Your Seat</h2>
 
             <div class="bg-gray-50 p-8 rounded-xl">
               <div class="flex justify-between my-5">
-                <h3 class="font-semibold">Seat</h3>
+                <h3 class="font-semibold">Seat <sup><span class="bg-green-500 text-white p-[2px] rounded " id="seat-count">0</span></sup>  </h3>
                 <h3 class="font-semibold">Class</h3>
                 <h3 class="font-semibold">Price</h3>
               </div>
+              <div class="my-4" id="selected-ticket">
+             
+              
+
+
+              </div>
               <div class="border-t-2 border-gray-400 space-y-4">
-                <div class="flex justify-between mr-8">
-                  <h2 class="font-bold">Total</h2>
-                  <h2 class="font-bold">BDT:</h2>
+                <div class="flex justify-between ">
+                  <h2 class="font-bold"> Total Price</h2>
+                  <h2 class="font-bold">BDT: <span id="total-price"></span></h2>
                 </div>
                 <div class="flex justify-between bg-gray-300 p-3 rounded-xl">
                   <input
@@ -372,32 +393,41 @@
             <div class="space-y-5 mt-8">
               <legend class="font-bold">Passenger Name*</legend>
               <label class="input input-bordered flex items-center gap-2">
-                
                 <input type="text" class="grow" placeholder="Enter your name" />
               </label>
               <legend class="font-bold">Phone Number*</legend>
               <label class="input input-bordered flex items-center gap-2">
-              
-                <input type="number" class="grow" placeholder="Enter your number" />
+                <input
+                  type="number"
+                  class="grow"
+                  placeholder="Enter your number"
+                />
               </label>
 
               <legend class="font-bold">Email Id*</legend>
               <label class="input input-bordered flex items-center gap-2">
-              
-                <input type="text" class="grow" placeholder="Enter your Email" />
+                <input
+                  type="text"
+                  class="grow"
+                  placeholder="Enter your Email"
+                />
               </label>
-             
             </div>
-            <button class="btn w-full bg-green-500 text-white font-bold my-5">Next</button>
+            <button class="btn w-full bg-green-500 text-white font-bold my-5">
+              Next
+            </button>
           </div>
         </div>
+      </section>
       </section>
     </main>
 
     <!-- ticket section start  -->
 
     <!-- footer section  -->
-    <footer class="container mx-auto footer p-10 bg-neutral text-neutral-content">
+    <footer
+      class="container mx-auto footer p-10 bg-neutral text-neutral-content"
+    >
       <aside>
         <svg
           width="50"
