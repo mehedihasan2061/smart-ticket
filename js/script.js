@@ -153,7 +153,9 @@ document
       ol.appendChild(p1);
       ol.appendChild(p2);
       discountTicket.appendChild(ol);
-    } 
+    } else {
+      document.getElementById("input-area").setAttribute("class","hidden");
+    }
   });
 
 // document.getElementById('ticket').addEventListener('click', function (e) {
