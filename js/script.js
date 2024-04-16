@@ -8,32 +8,28 @@ let counting = 0;
 
 for (const item of items) {
   item.addEventListener("click", function (e) {
-    const singleTicket = (e.target);
+    const singleTicket = e.target;
 
-    
-   
     // if (unique.includes(item) === false) {
     //   unique.push(item)
     //   return unique;
     // }
-    
+
     //  discountItem("input-value");
     counting = counting + 1;
     // console.log(counting);
-    const btn = document.getElementById("apply-btn")
+    const btn = document.getElementById("apply-btn");
     // const inputField = document.getElementById("input-value").value;
     // console.log(inputField);
     if (counting === 4) {
       btn.removeAttribute("disabled");
-      singleTicket.setAttribute("disabled",true)
+      singleTicket.setAttribute("disabled","disabled");
       // const inputValue = document.getElementById('input-value').value;
       // console.log(inputValue);
       // if (btn) {
-        
+
       // }
-      
     } else {
-     
       singleTicket.setAttribute("class", "btn  ");
       count = count + 1;
       sheat = sheat - 1;
@@ -67,27 +63,19 @@ for (const item of items) {
       selectedTicket.appendChild(ol);
 
       // singleTicket.setAttribute("disabled:bg-green-500");
-      singleTicket.setAttribute("disabled", "disabled");
+      singleTicket.setAttribute(
+        "disabled",
+        "disabled"
+      );
       singleTicket.setAttribute(
         "class",
         "bg-green-500 p-3 text-center text-white rounded-xl cursor-pointer"
       );
       //  btn.setAttribute("disabled", true);
     }
-
-
-
-
-
-
-
-  
-    
-   
-    
   });
-  
-  const ticket = (item.innerText);
+
+  const ticket = item.innerText;
   document
     .getElementById("phoneNumber")
     .addEventListener("keyup", function (e) {
@@ -97,90 +85,76 @@ for (const item of items) {
         nextBtn.removeAttribute("disabled");
       }
     });
-
 }
 //  function discountItem (id,value) {
 //   const inputField = document.getElementById(id).value;
-  
+
 //   console.log(inputField);
-  
+
 // }
- document.getElementById("apply-btn").addEventListener("click", function discountItem (id) {
-  const inputField = document.getElementById("input-value").value;
-  console.log(inputField)
-  setInnerText("total-price", total);
-  // setInnerText("grand-total", grandTotal);
-  if (inputField === "NEW15") {
-    const discountPrice = (total * 15) / 100;
-    // console.log(discountPrice);
-    const grand=document.getElementById('grand-total')
-    const grandTotal = total - discountPrice;
-   grand.innerText=grandTotal
+document
+  .getElementById("apply-btn")
+  .addEventListener("click", function discountItem(id) {
+    const inputField = document.getElementById("input-value");
+    const inputArea = inputField.value;
+    console.log(inputField);
+    setInnerText("total-price", total);
+    // setInnerText("grand-total", grandTotal);
+    if (inputArea === "NEW15") {
+      const discountPrice = (total * 15) / 100;
+      // console.log(discountPrice);
+       const inputField = document.getElementById("input-value");
+      const grand = document.getElementById("grand-total");
+      const grandTotal = total - discountPrice;
+      grand.innerText = grandTotal;
 
-    inputField.value = "";
+      inputField.value = "";
+      const btn = document.getElementById("apply-btn");
+      btn.setAttribute("disabled","disabled")
 
+      const discountTicket = document.getElementById("discount");
+      console.log(discountTicket);
+      const ol = document.createElement("ol");
+      ol.setAttribute("class", "flex justify-between");
+      const p1 = document.createElement("p");
+      p1.setAttribute("class", "font-bold");
+      p1.innerText = "Discount Price";
 
-    const discountTicket = document.getElementById("discount");
-    console.log(discountTicket);
-    const ol = document.createElement('ol')
-    ol.setAttribute("class", "flex justify-between");
-    const p1 = document.createElement('p')
-    p1.setAttribute("class", "font-bold");
-    p1.innerText = "Discount Price"
-    
-    const p2 = document.createElement('p')
-    p2.setAttribute('class','font-bold')
-    p2.innerText = discountPrice;
-    ol.appendChild(p1)
-    ol.appendChild(p2)
-    discountTicket.appendChild(ol);
-   
+      const p2 = document.createElement("p");
+      p2.setAttribute("class", "font-bold");
+      p2.innerText = discountPrice;
+      ol.appendChild(p1);
+      ol.appendChild(p2);
+      discountTicket.appendChild(ol);
+    }
+    if (inputArea === "Couple 20") {
+      const discountPrice = (total * 20) / 100;
+      // console.log(discountPrice);
+      const inputField = document.getElementById("input-value");
+      const grand = document.getElementById("grand-total");
+      const grandTotal = total - discountPrice;
+      grand.innerText = grandTotal;
 
+      inputField.value = "";
+      const btn = document.getElementById("apply-btn");
+      btn.setAttribute("disabled", "disabled");
 
+      const discountTicket = document.getElementById("discount");
+      console.log(discountTicket);
+      const ol = document.createElement("ol");
+      ol.setAttribute("class", "flex justify-between");
+      const p1 = document.createElement("p");
+      p1.setAttribute("class", "font-bold");
+      p1.innerText = "Discount Price";
 
-
-  
-    
-  }
-  if (inputField === "Couple20") {
-    const discountPrice = (total * 20) / 100;
-    // console.log(discountPrice);
-    const grand = document.getElementById("grand-total");
-    const grandTotal = total - discountPrice;
-    grand.innerText = grandTotal;
-
-    inputField.value = " ";
-
-    const discountTicket = document.getElementById("discount");
-    console.log(discountTicket);
-    const ol = document.createElement("ol");
-    ol.setAttribute("class", "flex justify-between");
-    const p1 = document.createElement("p");
-    p1.setAttribute("class", "font-bold");
-    p1.innerText = "Discount Price";
-
-    const p2 = document.createElement("p");
-    p2.setAttribute("class", "font-bold");
-    p2.innerText = discountPrice;
-    ol.appendChild(p1);
-    ol.appendChild(p2);
-    discountTicket.appendChild(ol);
-    
-    
-    
-    
-  }
-
-
-
-
-
-  else {
-    const input = document.getElementById("input-area");
-    input.removeAttribute('input-area')
-    
-  }
-})
+      const p2 = document.createElement("p");
+      p2.setAttribute("class", "font-bold");
+      p2.innerText = discountPrice;
+      ol.appendChild(p1);
+      ol.appendChild(p2);
+      discountTicket.appendChild(ol);
+    } 
+  });
 
 // document.getElementById('ticket').addEventListener('click', function (e) {
 //   console.log(e);
